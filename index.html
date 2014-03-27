@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Code Visualizer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+  
+	<body  style="background-color:#C4D8E2;">
+		<div class="text-left"><img src="./resources/logo.png"></img></div>
+		<!--
+		<iframe src="editor.html" style="float:left;  width:50%; height:70%;" scrolling="no"></iframe>
+		<iframe src="visual.html" style="float:right; width:50%; height:70%;"></iframe>
+		-->
+		<div id="editorframe" class="col-md-6" style="float:left; display:block; height:50%">
+			<h4>Source Code</h4>
+			<div class="col-md-12"style="height:100%; width:100%;"> 
+					<div class="panel codearea" >
+							<div id="editor">void foo(int *ptr) {
+    int x;
+}
+
+int main() {
+    int x;
+    int y;
+    int z;
+    foo1(&x)
+}</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<input id="files" type="file" name="file" style="float:left"/>
+				<input id="buttonClear" type="button" value="Clear" style="float:right; width:100px;"/>
+			</div>
+			<div class="row">
+				<h4>Console</h4>
+				<textarea id="inputarea" rows="3" cols="20">Enter your input here...</textarea>
+			</div>
+		</div>
+		
+		<div id="visualframe" class="col-md-6" style="float:right; display:block;height:75%">			
+			<div style="position:relative; height:100%; width: 100%; overflow:hidden;">
+				<div id="visual"></div>
+			</div>	
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<input id="submit" class="btn btn-primary" type="button" value="Visualize Code!" onclick="visualize();"/>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="footer">
+				<div class="col-xs-12 text-center">
+					<div class="footer-text">
+					CodeVisualizer by ThreePlayers group.
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	
+	<link href="./libraries/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"></link> 
+	<link href="./css/style.css" rel="stylesheet" type="text/css" media="screen"></link>
+	<link href="./libraries/bootstrap-tour/bootstrap-tour.min.css" rel="stylesheet">
+	
+	<script src="./libraries/jQuery/jquery-1.11.0.js"></script>
+	<script src="./libraries/bootstrap/js/bootstrap.js"></script>
+	
+	<script src="./libraries/bootstrap-tour/bootstrap-tour.min.js"></script>
+	<script src="./libraries/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./libraries/cytoscape.js-2.1.0/cytoscape.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./libraries/cytoscape.js-2.1.0/cytoscape.js"></script>
+	<script src="./libraries/cytoscape.js-2.1.0/arbor.js"></script>
+	
+	<script src="main.js" type="text/javascript" charset="utf-8"></script>
+</html>

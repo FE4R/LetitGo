@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Code Visualizer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+  
+	<body>
+		
+			<h4>Source Code</h4>
+		<div class="col-md-12"style="height:60%;width:100%;"> 
+				<div class="panel codearea" >
+						<div id="editor">function test() {
+		var x = "All this is syntax highlighted";
+		return x;
+	}</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<input type="file" id="files" name="file" style="float:left"/>
+			<input type="button" id="buttonClear" value="Clear" style="float:right; width:100px;"/>
+		</div>
+		<div class="row">
+			<h4>Console</h4>
+			<textarea id="inputarea" rows="3" cols="20">Enter your input here...</textarea>
+		</div>
+		
+		
+	</body>
+	
+	<script src="./libraries/codemirror.js"></script>
+	<link rel="stylesheet" href="./libraries/codemirror.css">
+	<script src="./libraries/mode/javascript/javascript.js"></script>
+	
+	<link href="./libraries/bootstrap-tour/bootstrap-tour.min.css" rel="stylesheet">
+	<link href="./libraries/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"></link> 
+	<link href="./css/style.css" rel="stylesheet" type="text/css" media="screen"></link>
+	
+	<script src="./libraries/jQuery/jquery-1.11.0.js"></script>
+	<script src="./libraries/bootstrap/js/bootstrap.js"></script>
+	<script src="./libraries/bootstrap-tour/bootstrap-tour.min.js"></script>
+	<script src="./libraries/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./libraries/cytoscape.js-2.1.0/cytoscape.js" type="text/javascript" charset="utf-8"></script>
+	<script src="editor.js" type="text/javascript" charset="utf-8"></script>
+</html>

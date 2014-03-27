@@ -1,0 +1,85 @@
+/*
+	CSS for the CodeVisualizer
+	by Albert Lorenz Dizon
+	as partial requirement for WEBAPPS T3 AY 13-14
+*/
+
+html, body {
+	font: 14px helvetica neue, helvetica, arial, sans-serif;
+	font-family: calibri;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF;
+}	
+
+textarea {
+	font-family: "lucida console";
+	width: 100%;
+}
+
+#logo {
+	background: #FFFFFF url(./resources/logo.png) no-repeat left top;
+}
+
+#content {
+	display: block;
+	padding-top: 50px;
+}
+
+#editor { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	border: 2px solid #CCC;
+}
+
+#visual {
+	display: block;
+	height: 100%;
+	border:1px solid #CCC;
+}
+
+.isResizable {
+    background: rgba(255, 0, 0, 0.2);
+    font-size: 2em;
+    border: 1px solid black;
+    overflow: hidden;
+    resize: both;
+    width: 160px;
+    height: 120px;
+    min-width: 120px;
+    min-height: 90px;
+    max-width: 400px;
+    max-height: 300px;
+}
+
+.codearea {
+	padding: 10%;
+	min-height: 200px;
+}
+
+.inputarea {
+	display: block;
+}
+
+.footer {
+	padding-top: 10px;
+	font-size: 10px;
+}
+
+.padding {
+	padding: 20px;
+}
+
+.layout {
+	padding: 50px; 
+	font-family: Georgia, serif; 
+}
+
+.layout-slider { 
+	margin-bottom: 60px; 
+	width: 50%; 
+}
